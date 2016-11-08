@@ -1,0 +1,104 @@
+.vertical-menu{
+    font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;
+}
+.vertical-menu__item-container-0{
+    list-style: none;
+    font-size: 80%;
+    padding-bottom: 15px;
+}
+.vertical-menu__item-0{
+    padding-top: 20px;
+}
+
+.vertical-menu__item-0--close{
+    background-color: white;     
+    width:100%;      
+    border:0.1px solid #EDEDED;
+    
+} 
+.vertical-menu__item-0--open{
+    background-color: white;     
+    width:100%;      
+    border:0.1px solid #EDEDED;
+   
+} 
+.vertical-menu__item-0--close:before{
+    content:'\f2c0';
+    font-family: FontAwesome; 
+    
+}
+
+.vertical-menu__item-0--open:before{
+    content: "\f2c0";
+    font-family: FontAwesome;
+    padding:10px;
+}
+
+.vertical-menu__item-container-1{
+    list-style: none;
+    background-color: white;
+    padding: 0px;
+
+}
+.vertical-menu__item-1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border:0.1px solid #EDEDED;
+    padding-left: 30px;
+}
+.vertical-menu__item-1--close{
+
+}
+.vertical-menu__item-1--doc{
+
+
+}
+.vertical-menu__item-1--close:before{
+    content:'\f2c0';
+    font-family: FontAwesome;  
+
+}
+.vertical-menu__item-1--doc:before{
+    content:'\f2c0';
+    font-family: FontAwesome;  
+
+}
+.vertical-menu-container--icono_open:after{
+    float:right;   
+    content:"\f2c0";
+    font-family: FontAwesome; 
+    padding-right: 10px;
+}    
+.vertical-menu-container--icono_close:after{
+    float:right;   
+    content:"\f2c0";
+    font-family: FontAwesome; 
+    padding-right: 10px;
+}    
+.vertical-menu-item--icono_open:after{
+    float:right;   
+    content:"\f2c0";
+    font-family: FontAwesome; 
+    padding-right: 10px;
+}    
+.vertical-menu-item--icono_close:after{
+    float:right;   
+    content:"\f2c0";
+    font-family: FontAwesome; 
+    padding-right: 10px;
+}   
+
+.vertical-menu__link-0{
+    padding-bottom: 20px;
+    display:inline-block;
+    text-decoration: none;
+    color:#262626;
+   
+}
+.visible{
+    display:hidden;
+}
+
+.invisible{
+    display:none;
+}

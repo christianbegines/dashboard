@@ -1,0 +1,12 @@
+.top-main{
+   @include fuente-main;
+   background-color: #2196F3;
+   height: 50px;
+   padding: 15px;
+}
+.elemento-lista--top-panel{
+    float:right;
+    display: inline;
+    padding: 3px;  
+}
+

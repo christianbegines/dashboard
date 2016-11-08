@@ -1,0 +1,18 @@
+
+
+@for $size from 1 through $num-columns{
+    $ancho:((100/12)*$size)*1%;
+    .col-#{$size}{
+        float:left;
+        width:$ancho;
+    }
+    .offset-#{$size}{
+        margin-left: $ancho;
+    }
+}
+.row:after{
+    content:"";
+    clear:both;
+    display:block;   
+}
+
