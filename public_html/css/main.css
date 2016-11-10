@@ -552,7 +552,8 @@ html {
 .elemento-lista--top-panel {
   float: right;
   display: inline;
-  padding: 3px; }
+  padding: 3px;
+  margin: 5px 5px; }
 
 .vertical-menu {
   font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif; }
@@ -575,8 +576,29 @@ html {
   width: 100%;
   border: 0.1px solid #EDEDED; }
 
-.vertical-menu__item-0--close:before {
-  content: '\f2c0';
+#home.vertical-menu__item-0--close:before {
+  margin: 20px;
+  content: '\f015';
+  font-family: FontAwesome; }
+
+#calendar.vertical-menu__item-0--close:before {
+  margin: 20px;
+  content: '\f073';
+  font-family: FontAwesome; }
+
+#userInterface.vertical-menu__item-0--close:before {
+  margin: 20px;
+  content: '\f0ea';
+  font-family: FontAwesome; }
+
+#contacto.vertical-menu__item-0--close:before {
+  margin: 20px;
+  content: '\f2b9';
+  font-family: FontAwesome; }
+
+#forums.vertical-menu__item-0--close:before {
+  margin: 20px;
+  content: '\f1d7';
   font-family: FontAwesome; }
 
 .vertical-menu__item-0--open:before {
@@ -605,25 +627,25 @@ html {
 
 .vertical-menu-container--icono_open:after {
   float: right;
-  content: "\f2c0";
+  content: "\f068";
   font-family: FontAwesome;
   padding-right: 10px; }
 
 .vertical-menu-container--icono_close:after {
   float: right;
-  content: "\f2c0";
+  content: "\f067";
   font-family: FontAwesome;
   padding-right: 10px; }
 
 .vertical-menu-item--icono_open:after {
   float: right;
-  content: "\f2c0";
+  content: "\f067";
   font-family: FontAwesome;
   padding-right: 10px; }
 
 .vertical-menu-item--icono_close:after {
   float: right;
-  content: "\f2c0";
+  content: "\f067";
   font-family: FontAwesome;
   padding-right: 10px; }
 
@@ -633,8 +655,24 @@ html {
   text-decoration: none;
   color: #262626; }
 
+#link.vertical-menu__link-0 {
+  line-height: 50px;
+  margin-left: 10px; }
+
 .visible {
   display: hidden; }
 
 .invisible {
   display: none; }
+
+.imagen--avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 80px;
+  float: left; }
+
+.fondo--profile {
+  background: url(profile.jpg); }
+
+.contendor-imagen--avatar {
+  padding: 20px 30px; }

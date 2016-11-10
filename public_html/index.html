@@ -10,52 +10,71 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
         <script src="script.js"></script>
     </head>
     <body>
         <div class="panel-main">
             <header class="top-main fuente-main">
                 <ul>
-                    <li class="elemento-lista--top-panel">Lupa</li>
-                    <li class="elemento-lista--top-panel">Mensaje</li>
-                    <li class="elemento-lista--top-panel">Alerta</li>
-                    <li class="elemento-lista--top-panel">Lupa</li>
+                    <li class="elemento-lista--top-panel"><i class="fa fa-cog" aria-hidden="true"></i></li>
+                    <li class="elemento-lista--top-panel"><i class="fa fa-envelope-open" aria-hidden="true"></i></li>
+                    <li class="elemento-lista--top-panel"><i class="fa fa-bell" aria-hidden="true"></i></li>
+                    <li class="elemento-lista--top-panel"><i class="fa fa-search" aria-hidden="true"></i></li>
                 </ul>
             </header>
             <section>
                 <aside class="panel_main_barra-lateral col-2">
+                   
                     <div class="vertical-menu">
                         <ul class="vertical-menu__item-container-0">                                                      
-                            <li  class=" vertical-menu__item-0 vertical-menu__item-0--open" onclick="addMenu('lista1', 1)">  
-                                <a href="#" class="vertical-menu__link-0">Profile  </a>                           
+                            <li  class=" vertical-menu__item-0 fondo--profile" onclick="addMenu('lista1', 1)">  
+                                <img src="img/avatar.jpg" alt="..." class="imagen--avatar"/><a id="link" href="#" class="vertical-menu__link-0">Profile</a>                           
                             </li>
-                            <li class="vertical-menu__item-0 vertical-menu__item-0--open" onclick="addMenu('lista2', 2)">
-                                <a href="#" class="vertical-menu__link-0">Item 2</a>  <span class="vertical-menu-container--icono_open " id="2"></span>
-                                <ul class="vertical-menu__item-container-1 visible" id="lista2">
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 <span class="vertical-menu-item--icono_open"></span></li>
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem2 <span class="vertical-menu-item--icono_open"></span></li>
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing1 <span class="vertical-menu-item--icono_open"></span></li>
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 <span class="vertical-menu-item--icono_open"></span></li>
+                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="home" onclick="addMenu('lista2', 2)">
+                                <a href="#" class="vertical-menu__link-0">Home</a>  <span class="vertical-menu-container--icono_close " id="2"></span>
+                                <ul class="vertical-menu__item-container-1 invisible" id="lista2">
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem2 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing1 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 </li>
                                 </ul>
                             </li>
-                            <li class="vertical-menu__item-0 vertical-menu__item-0--open" onclick="addMenu('lista3', 3)">
-                                <a href="#" class="vertical-menu__link-0">Item 3</a> <span class="vertical-menu-container--icono_open " id="3"></span> 
-                                <ul class="vertical-menu__item-container-1 visible" id="lista3">
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 <span class="vertical-menu-item--icono_open"></span></li>
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem2 <span class="vertical-menu-item--icono_open"></span></li>
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing1 <span class="vertical-menu-item--icono_open"></span></li>
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 <span class="vertical-menu-item--icono_open"></span></li>
+                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="calendar" onclick="addMenu('lista3', 3)">
+                                <a href="#" class="vertical-menu__link-0">Calendar</a> <span class="vertical-menu-container--icono_close " id="3"></span> 
+                                <ul class="vertical-menu__item-container-1 invisible" id="lista3">
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem2 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing1 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 </li>
                                 </ul>
                             </li>
-                            <li class="vertical-menu__item-0 vertical-menu__item-0--open" onclick="addMenu('lista4', 3)">
-                                <a href="#" class="vertical-menu__link-0">Item 4</a> <span class="vertical-menu-container--icono_open "></span> 
-                                <ul class="vertical-menu__item-container-1 visible" id="lista4">
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 <span class="vertical-menu-item--icono_open"></span></li>
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem2 <span class="vertical-menu-item--icono_open"></span></li>
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing1 <span class="vertical-menu-item--icono_open"></span></li>
-                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 <span class="vertical-menu-item--icono_open"></span></li>
+                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="userInterface" onclick="addMenu('lista4', 4)">
+                                <a href="#" class="vertical-menu__link-0">User Interface</a> <span class="vertical-menu-container--icono_close " id="4"></span> 
+                                <ul class="vertical-menu__item-container-1 invisible" id="lista4">
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem2 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing1</li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 </li>
+                                </ul>
+                            </li>
+                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="contacto" onclick="addMenu('lista5', 5)">
+                                <a href="#" class="vertical-menu__link-0">Contact</a> <span class="vertical-menu-container--icono_close " id="5"></span> 
+                                <ul class="vertical-menu__item-container-1 invisible" id="lista5">
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem2 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing1 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 </li>
+                                </ul>
+                            </li>
+                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="forums" onclick="addMenu('lista6', 6)">
+                                <a href="#" class="vertical-menu__link-0">Forums</a> <span class="vertical-menu-container--icono_close " id="6"></span> 
+                                <ul class="vertical-menu__item-container-1 invisible" id="lista6">
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1</li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem2 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing1 </li>
+                                    <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 </li>
                                 </ul>
                             </li>
                         </ul>
