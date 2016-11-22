@@ -1,18 +1,20 @@
-
-
-@for $size from 1 through $num-columns{
-    $ancho:((100/12)*$size)*1%;
-    .col-#{$size}{
-        float:left;
-        width:$ancho;
-    }
-    .offset-#{$size}{
-        margin-left: $ancho;
-    }
-}
 .row:after{
     content:"";
     clear:both;
     display:block;   
+}
+
+@each $nombre,$min_size,$max_size in $size-column{
+    @media(min-width:$min_size){
+        @for $i from 1 through $num-columns{
+            .col-#{$nombre}-#{$i}{
+                float:left;
+                width:((100/$num-columns)*$i)*1%;
+            }
+            .offset-#{$nombre}-#{$i}{
+                margin-left:((100/$num-columns)*$i)*1%;
+            }
+        }
+    }
 }
 

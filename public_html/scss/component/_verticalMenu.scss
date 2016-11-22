@@ -129,3 +129,59 @@
 .invisible{
     display:none;
 }
+
+
+
+.main-menu:after {
+    content: "";
+    clear:both;
+    display: block;
+}
+ 
+.vertical-menu__item-0 {
+    padding: 10px;   
+}
+ 
+.vertical-menu__item-hamburger {
+    padding: 10px;    
+}
+ 
+ 
+@media(max-width: 499px) {
+    .vertical-menu__item-0 {
+        float:none;
+        display:none;
+    }
+    .vertical-menu__item-hamburger {
+        display: inline-block;
+    }
+     
+    .main-menu {
+        position:absolute;
+        top:19px;
+        left:0px;
+    }
+     
+    .vertical-menu__item-0--visible {
+        display:list-item;
+    }
+    .vertical-menu__item-0--hide {
+        display:none;
+    }
+ 
+     
+}
+@media(min-width: 500px) {
+    .vertical-menu__item-0 {
+       
+        display:list-item;
+    }
+     
+    .vertical-menu__item-hamburger {
+        display: none;
+    }
+ 
+    .main-menu {
+        position: static;      
+    }
+}

@@ -9,4 +9,18 @@ function addMenu(idLista,idItem){
 
     }
 }
+function toggleVisibilityMenu() { 
+    var elements = document.getElementsByClassName("vertical-menu__item-0"); 
+    for (var i = 0; i < elements.length; i++) { 
+        if (elements[i].className.indexOf("vertical-menu__item-0--visible") >= 1) { 
+            elements[i].className = "vertical-menu__item-0 vertical-menu__item-0--hide";
+            
+        } else { 
+            elements[i].className = "vertical-menu__item-0 vertical-menu__item-0--visible";
+            
+        
+        } 
+    } 
+}
+
 

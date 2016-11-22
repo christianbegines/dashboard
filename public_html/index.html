@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script src="script.js"></script>
@@ -25,14 +26,16 @@ and open the template in the editor.
                 </ul>
             </header>
             <section>
-                <aside class="panel_main_barra-lateral col-2">
-                   
+                <aside class="panel_main_barra-lateral col-xss-12 col-xs-4 col-sm-4 col-md-2">                  
                     <div class="vertical-menu">
-                        <ul class="vertical-menu__item-container-0">                                                      
-                            <li  class=" vertical-menu__item-0 fondo--profile" onclick="addMenu('lista1', 1)">  
+                        <ul class="vertical-menu__item-container-0 "> 
+                            <li class="vertical-menu__item-hamburger">
+                                <a href="javascript:void(0);"  onclick="toggleVisibilityMenu()">☰</a>
+                            </li>
+                            <li class=" vertical-menu__item-0 fondo--profile" onclick="addMenu('lista1', 1)">  
                                 <img src="img/avatar.jpg" alt="..." class="imagen--avatar"/><a id="link" href="#" class="vertical-menu__link-0">Profile</a>                           
                             </li>
-                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="home" onclick="addMenu('lista2', 2)">
+                            <li class="vertical-menu__item-0 vertical-menu_item-0--visible vertical-menu__item-0--close vertical-menu_item-0--visible" id="home" onclick="addMenu('lista2', 2)">
                                 <a href="#" class="vertical-menu__link-0">Home</a>  <span class="vertical-menu-container--icono_close " id="2"></span>
                                 <ul class="vertical-menu__item-container-1 invisible" id="lista2">
                                     <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 </li>
@@ -41,7 +44,7 @@ and open the template in the editor.
                                     <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 </li>
                                 </ul>
                             </li>
-                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="calendar" onclick="addMenu('lista3', 3)">
+                            <li class="vertical-menu__item-0 vertical-menu__item-0--close vertical-menu_item-0--visible" id="calendar" onclick="addMenu('lista3', 3)">
                                 <a href="#" class="vertical-menu__link-0">Calendar</a> <span class="vertical-menu-container--icono_close " id="3"></span> 
                                 <ul class="vertical-menu__item-container-1 invisible" id="lista3">
                                     <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 </li>
@@ -50,7 +53,7 @@ and open the template in the editor.
                                     <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 </li>
                                 </ul>
                             </li>
-                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="userInterface" onclick="addMenu('lista4', 4)">
+                            <li class="vertical-menu__item-0 vertical-menu__item-0--close vertical-menu_item-0--visible" id="userInterface" onclick="addMenu('lista4', 4)">
                                 <a href="#" class="vertical-menu__link-0">User Interface</a> <span class="vertical-menu-container--icono_close " id="4"></span> 
                                 <ul class="vertical-menu__item-container-1 invisible" id="lista4">
                                     <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 </li>
@@ -59,7 +62,7 @@ and open the template in the editor.
                                     <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 </li>
                                 </ul>
                             </li>
-                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="contacto" onclick="addMenu('lista5', 5)">
+                            <li class="vertical-menu__item-0 vertical-menu__item-0--close vertical-menu_item-0--visible" id="contacto" onclick="addMenu('lista5', 5)">
                                 <a href="#" class="vertical-menu__link-0">Contact</a> <span class="vertical-menu-container--icono_close " id="5"></span> 
                                 <ul class="vertical-menu__item-container-1 invisible" id="lista5">
                                     <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1 </li>
@@ -68,7 +71,7 @@ and open the template in the editor.
                                     <li class="vertical-menu__item-1 vertical-menu__item-1--doc">  Thing2 </li>
                                 </ul>
                             </li>
-                            <li class="vertical-menu__item-0 vertical-menu__item-0--close" id="forums" onclick="addMenu('lista6', 6)">
+                            <li class="vertical-menu__item-0 vertical-menu__item-0--close vertical-menu_item-0--visible" id="forums" onclick="addMenu('lista6', 6)">
                                 <a href="#" class="vertical-menu__link-0">Forums</a> <span class="vertical-menu-container--icono_close " id="6"></span> 
                                 <ul class="vertical-menu__item-container-1 invisible" id="lista6">
                                     <li class="vertical-menu__item-1 vertical-menu__item-1--close">  SubItem1</li>
@@ -80,8 +83,10 @@ and open the template in the editor.
                         </ul>
                     </div>
                 </aside>
-                <article class="panel_main_panel-principal col-10">
+                <article class="panel_main_panel-principal col-xs-10 col-sm-10 col-md-10">
+                    <div class="">
 
+                    </div>
                 </article>
             </section>
         </div>
